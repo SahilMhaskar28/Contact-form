@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+            <small class="error" id="messageError"></small>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<!-- Custom Popup -->
+<div id="customAlert" class="custom-alert">
+    <div class="alert-box">
+        <p id="alertMessage"></p>
+        <button onclick="closeAlert()">OK</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
